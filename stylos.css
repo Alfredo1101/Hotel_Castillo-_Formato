@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 80px;
+    background-image: url('AS2I2723-Modifier.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.registro-section, .descuentos-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 35%;
+}
+
+#registroForm {
+    background-color: rgb(244, 244, 234);
+    width: 80%;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: rgb(244, 244, 234);
+}
+
+table, th, td {
+    border: 1px solid rgb(244, 244, 234);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

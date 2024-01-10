@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylos.css">
+    <title>Hotel Castillo</title>
+</head>
+<body>
+    <h1>Hotel Castillo</h1><br>
+    
+    <div class="flex-container">
+        <div class="registro-section">
+            <h2>Registro de Cliente</h2>
+            <form id="registroForm">
+                <label for="nombre">Nombre del Cliente:</label>
+                <input type="text" id="nombre" required><br><br>
+
+                <label for="cedula">Cédula del Cliente:</label>
+                <input type="text" id="cedula" required><br><br>
+
+                <label for="categoria">Categoría de Membresía:</label>
+                <select id="categoria">
+                    <option value="1">Sophie</option>
+                    <option value="2">Howl</option>
+                    <option value="3">Calcifer</option>
+                </select><br><br>
+
+                <label for="duracionCrucero">Duración del Crucero (en noches):</label>
+                <input type="number" id="duracionCrucero" required><br><br>
+
+                <button type="button" onclick="registrarCliente()">Registrar Cliente</button><br>
+            </form>
+        </div>
+
+        <div class="descuentos-section">
+            <h2>Descuentos por Membresía</h2>
+            <table border="1">
+                <tr>
+                    <th>Categoría</th>
+                    <th>Total Descuentos (USD)</th>
+                    <th>% Por categorias</th>
+                    <th>Cantidad de Clientes</th>
+                </tr>
+                <tbody id="totalDescuentos">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h2>Clientes Registrados</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Cédula</th>
+            <th>Categoría</th>
+            <th>Costo del Crucero (USD)</th>
+            <th>Descuento por Membresía (USD)</th>
+            <th>Costo a Pagar (USD)</th>
+            <th>% Descuento Aplicado</th>
+        </tr>
+        <tbody id="clientesRegistrados">
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
